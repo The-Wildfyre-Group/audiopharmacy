@@ -1,0 +1,56 @@
+<style>
+
+.bgcolor-grey {background: #f2f2f2;}
+.bgcolor-white {background: #ffffff;}
+
+  small {
+  font-size: 85%;
+  text-align: center;
+  display: block;
+  color: #aaa;
+  line-height: 24px;
+}
+
+.the_band h2 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.the_band img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+#gallery.container { padding: 60px 0;}
+
+#gallery .the_band .col {
+  display: block;
+  float: left;
+  margin: 0 0 3% 2%;
+}
+
+.row > .col.span_2_of_12 {
+  display: block;
+  float: left;
+  margin: 0 0 0 3%;
+}
+
+.the_band .row {padding-bottom: 3%;}
+
+</style>
+
+<div id="boxed">    
+	<!-- CONTENT -->
+	<%= render "ap_band" %>
+
+	<%= render "ap_prescriptions" %>
+
+	<%= render "ap_visual" %>
+
+	<%= render "ap_community" %>
+	      
+</div><!-- End Boxed -->

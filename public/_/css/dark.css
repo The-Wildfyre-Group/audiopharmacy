@@ -1,0 +1,372 @@
+/*Dark theme specific styles*/
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Global styles
+ * 2.0 - Header
+ 	** 2.1 Contact and Share toggle sections
+	** 2.2 Share toggle section
+	** 2.3 Contact toggle section
+ * 3.0 - Main navigation section
+ * 4.0 - Logo section
+ * 5.0 - Main slider section
+ 	** 5.1 Main slieder caption
+	** 5.2 Main slider arrows
+ * 6.0 - Music section
+ * 7.0 - Live section
+ * 8.0 - Gallery section
+ 	** 8.1 Gallery Navigation Arrows
+ * 10.0 - Biography section	
+ * 10.0 - News section
+ * 11.0 - Twitter section
+ * 12.0 - Newsletter and social media section
+ 	** 12.1 Newsletter
+	** 12.2 Social media
+ * 13.0 - Footer
+ * 14.0 - Lightbox - Ajax
+ */
+ 
+/**
+ * 1.0 Global styles
+*/
+::-moz-selection{background: #d9d9d9; color: #000; text-shadow: none;}
+::selection {background: #d9d9d9; color: #000; text-shadow: none;} 
+html,
+body,
+button,
+input,
+select,
+textarea {
+	color:#6b6b6b;
+}
+body {
+	background:url(../img/dark/bg-dark.jpg) repeat;
+}
+a {
+	color: #b7a389;
+}
+#boxed {
+	background:#000;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.section-title, .section-nav {
+	color:#fff;
+}
+.section-nav a {
+	background-color:#3d3d3d;
+}
+.section-nav a:hover {
+	background:#fff;
+}
+#music,
+#gallery,
+#news {
+	background:#121212;
+}
+a.current_active_nav_item{
+	background:#fff;
+}
+
+/**
+ * 2.0 Header
+*/
+#fixed-header {
+	background:#fff;
+	color:#000;
+}
+
+/**
+ 	** 2.1 Contact and Share toggle sections
+ */
+#contact_toggle, #share_toggle{
+	background:#121212;
+	color: #fff;
+}
+.tab_active {
+	background:url(../img/dark/close-tab.png) no-repeat 16px center #121212 !important;
+}
+/**
+	** 2.2 Share toggle section
+ */
+#share_toggle a {
+	color:#000;
+}
+#share_toggle a:hover {
+	background:#fff;
+}
+/**
+	** 2.3 Contact toggle section
+ */
+#contact_toggle h1 {
+    border-bottom: 2px solid #2b2b2b;
+    color: #fff;
+}
+#contact_toggle a {
+	color:#999999;
+}
+#contact_toggle ul li {
+	border-bottom:1px dotted #333333;
+}
+#contact_toggle input, #contact_toggle textarea {
+	background:#000;
+	border:1px solid #3c3c3c;
+}
+#contact_toggle input:focus, #contact_toggle textarea:focus {
+	border-color:#999999;
+}
+#contact_toggle input[type=submit] {
+	background:#fff;
+	color:#000;
+}
+#contact_toggle input[type=submit]:hover {
+	background:#eeeeee;
+}
+#success, #failure {
+	color:#093;
+}
+#failure{
+	color:#F00;
+}
+
+/**
+ * 3.0 - Main navigation section
+ */
+.active_nav_section{
+	color:#B7A389;
+}
+nav a {
+	color:#000;
+}
+nav a:hover {
+	color:#b7a389;
+}
+.nav-tab a {
+	background:#0d0d0d no-repeat 16px center;
+	color:#fff;
+}
+.nav-tab a:hover {
+	background-color:#121212;
+	color:#fff;
+}
+#contact-tab {
+	background-image: url(../img/dark/email-icon.png);
+}
+#share-tab {
+	background-image:url(../img/dark/share-icon.png);
+	border-left:1px solid #262626;
+}
+/**
+ * 4.0 - Logo section
+ */
+#logo h1 {
+	color:#fff;
+}
+#logo h4 {
+	color:#949494;
+	background:url(../img/dark/logo-diagonal-line.png) no-repeat left;
+}
+/**
+ * 5.0 - Main slider section
+ */
+/**
+ 	** 5.1 Main slieder caption	
+ */
+.slider-caption {
+	background:#121212;
+}
+.slider-caption h2 {
+	color:#fff;
+}
+/**
+ * 6.0 - Music section
+ */
+#covers li {
+    background: #000;
+    box-shadow: 0 0 2px #000;
+}
+
+#covers li a div h3 {
+	color:#f2f2f2;
+}
+#covers li a div span {
+	color: #9b9b9b;
+}
+#covers hr {
+	background: none repeat scroll 0 0 #c9c9c9;
+}
+#covers li a div h4 {
+	color:#b7a389;
+}
+/**
+ * 7.0 - Events section
+ */
+.live li {
+	border-bottom: 1px dotted #262626;
+}
+.live li:first-child {
+	border-top: 1px dotted #262626;
+}
+.live li:hover {
+	background-color:#090909;
+}
+.live h2 {
+	color:#fff;
+}
+.live small {
+	color:#949494;
+}
+.live h3 {
+	color:#b7a389;
+}
+.event_box {
+	background: #0d0d0d;
+	border: 1px solid #242424;
+}
+.event_box:after {
+	border-top-color: #0d0d0d;
+}
+.event_box:before {
+	border-top-color: #242424;
+}
+/**
+ * 8.0 - Gallery section
+ */
+#gallery-switch ul li a {
+	border-bottom: 2px solid #2b2b2b;
+	color:#a1a1a1;
+}
+#gallery-switch ul li a:hover {
+	border-color:#fff;
+	color:#fff;
+}
+.caption {
+	color:#fff;
+}
+.gallery-no {
+	color:#fff;
+}
+#gallery-switch ul li a.active_gallery_navigation{
+	border-color: #fff;
+	color: #fff;
+}
+/**
+ 	** 8.1 Gallery Navigation Arrows
+ */
+.gallery-nav li a {
+	border:1px solid #fff;
+}
+.gallery-nav li a:hover {
+	border-color:#5c5c5c;
+}
+.next-gallery {
+	background:url(../img/dark/gallery-arrows.png) no-repeat top right;
+}
+.next-gallery:hover {
+	background:url(../img/dark/gallery-arrows.png) no-repeat top left;
+}
+.prev-gallery {
+	background:url(../img/dark/gallery-arrows.png) no-repeat bottom left;
+}
+.prev-gallery:hover {
+	background:url(../img/dark/gallery-arrows.png) no-repeat bottom right;
+}
+#gallery-nav-mobile ul li{
+	color:#fff;
+}
+/**
+ * 9.0 - Biography section
+ */
+#bio h2 {
+	color:#fff;
+}
+#bio h3 {
+	color:#fff;
+}
+#bio hr {
+	background:#2b2b2b;
+}
+/**
+ * 10.0 - News section
+ */
+#news h3 {
+	border-bottom:2px solid #2b2b2b;
+	color:#fff;
+}
+#news ul li {
+	border-bottom:1px dotted #262626;
+}
+#news ul a,
+#news h2 a {
+	color:#fff;
+}
+#news ul a:hover,
+#news h2 a:hover  {
+	color:#B7A389;
+}
+/**
+ * 11.0 - Twitter section
+ */
+.user a {
+	background: url(../img/dark/twitter-icon.png) no-repeat 10px 6px;
+	color: #fff;
+	border: 1px solid #444444;
+}
+.user a:hover{
+	-webkit-box-shadow: 0px 0px 4px 0px #000;
+	box-shadow: 0px 0px 4px 0px #000;
+	border-color: #444444;
+	background-color:#121212;
+}
+#twitter .timePosted{
+	color: #fff !important;
+}
+/**
+ * 12.0 - Newsletter and social media section
+ */
+#bottom-stripe {
+	background:#fff;
+	color:#000;
+}
+#bottom-stripe h1 {
+	color:#b7a389;
+}
+#bottom-stripe h2 {
+	color:#6a6a6a;
+}
+/**
+	** 12.1 Newsletter 
+ */
+#newsletter input {
+	background:#f5f5f5;
+	color:#fff;
+}
+#newsletter input[type='email'] {
+    color: #000;
+    border: 1px solid #000;
+}
+#newsletter input:focus {
+	background:#fff;
+}
+#newsletter input[type='submit'] {
+	background:#000;
+}
+#newsletter input[type='submit']:hover {
+	background:#1b1b1b;
+}
+/**
+	** 12.2 Social media
+ */
+li.facebook { background-image:url("../img/dark/social/facebook.png"); }
+li.flickr { background-image:url("../img/dark/social/flickr.png"); }
+li.google-plus { background-image:url("../img/dark/social/google-plus.png"); }
+li.instagram { background-image:url("../img/dark/social/instagram.png"); }
+li.lastfm { background-image:url("../img/dark/social/lastfm.png"); }
+li.myspace { background-image:url("../img/dark/social/myspace.png"); }
+li.pinterest { background-image:url("../img/dark/social/pinterest.png"); }
+li.rss { background-image:url("../img/dark/social/rss.png"); }
+li.soundcloud { background-image:url("../img/dark/social/soundcloud.png"); }
+li.tumblr { background-image:url("../img/dark/social/tumblr.png"); }
+li.twitter-social { background-image:url("../img/dark/social/twitter.png"); }
+li.vimeo { background-image:url("../img/dark/social/vimeo.png"); }
+li.youtube { background-image:url("../img/dark/social/youtube.png"); }

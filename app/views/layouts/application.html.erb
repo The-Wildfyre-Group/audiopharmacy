@@ -1,14 +1,125 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Maliavibes</title>
-  <%= stylesheet_link_tag    'application' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>Audiopharmacy</title>
+	  <%= stylesheet_link_tag    'application' %>
+	  <%= javascript_include_tag 'application' %>
+	  <%= csrf_meta_tags %>
 
-<%= yield %>
+	  
 
-</body>
+		<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+		<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+		<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+		<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+		<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+		<!-- the "no-js" class is for Modernizr. --> 
+
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Audiopharmacy</title>
+		
+	    <meta name="title" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+	    
+		<!--  Mobile Viewport Fix
+		http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
+		device-width : Occupy full width of the screen in its current orientation
+		initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+		maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+		-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=false;" />
+
+		<link rel="shortcut icon" href="/_/img/favicon.ico" />
+
+		<link rel="stylesheet" href="/_/css/reset.css" />
+		<link rel="stylesheet" href="/_/css/grid.css" />
+		<link rel="stylesheet" href="/_/css/style.css" />
+		<link rel="stylesheet" href="/_/css/media-queries.css" />
+	    <link rel="stylesheet" href="/_/css/skin/jplayer-skin.css" />
+
+	    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,400italic,500,500italic,700italic,700,300italic' rel='stylesheet' type='text/css'>
+
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<script src="/_/js/modernizr-2.6.2.dev.js"></script>
+
+		<style>
+
+		#covers li img {width: 271px; height: 240px;}
+
+		a.arrow {
+		  font-size: 30px;
+		  display: block;
+		  width: inherit;
+		  height: inherit;
+		  color: #888;
+		  border-radius: 0%;
+		  margin: 0 auto;
+		  font-weight: lighter;
+		  float: right;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		.bgcolor-grey {background: #f2f2f2 !important;}
+		.bgcolor-white {background: #ffffff !important;}
+
+		#slider {
+		  position: relative;
+		  overflow: hidden;
+		  margin: 0 0 20px 0;
+		}
+
+
+		</style>
+
+	</head>
+	<body>
+	<div id="ajax-window"></div>
+		
+
+			<!-- HEADER -->
+			<%= render "shared/header" %>
+
+
+			<%= yield %>
+
+			<!-- Social Media -->	
+			<%= render "shared/twitter" %>
+
+			<!-- Footer -->
+			<%= render "shared/footer" %>
+
+
+
+	    
+		<script src="/_/js/jquery-1.9.1.min.js"></script>    
+	    <script src="/_/js/easing.js"></script>
+	    <script src="/_/js/jquery.jplayer.min.js"></script>
+	    <script src="/_/js/jplayer.playlist.min.js"></script>
+	    <script src="/_/js/playlist.js"></script>
+	    <script src="/_/js/jquery.hoverdir.js"></script>
+	    <script src="/_/js/jquery.columnizer.js"></script>
+	    <script src="/_/js/twitterFetcher_v10_min.js"></script>
+	    <script src="/_/js/functions.js"></script>
+
+	    
+	    <!-- Google Analytics -->
+	    <script>    
+	      var _gaq = _gaq || [];
+	      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+	      _gaq.push(['_trackPageview']);
+	    
+	      (function() {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	      })();    
+	    </script>    
+	</body>
 </html>

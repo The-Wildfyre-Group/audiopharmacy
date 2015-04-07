@@ -1,0 +1,614 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Bandit - Awesome Responsive Template for Bands and Musicians</title>
+	
+    <meta name="title" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+    
+    
+	<!--  Mobile Viewport Fix
+	http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=false;" />
+
+	<link rel="shortcut icon" href="_/img/favicon.ico" />
+
+	<link rel="stylesheet" href="_/css/reset.css" />
+	<link rel="stylesheet" href="_/css/grid.css" />
+	<link rel="stylesheet" href="_/css/style.css" />
+	<link rel="stylesheet" href="_/css/dark.css" /> <!--  The dark template version -->
+	<link rel="stylesheet" href="_/css/media-queries.css" />
+    <link rel="stylesheet" href="_/css/skin/jplayer-skin.css" />
+    <link rel="stylesheet" href="_/css/skin/jplayer-skin-dark.css" /> <!--  Mp3 player skin for the dark template version -->
+
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,400italic,500,500italic,700italic,700,300italic' rel='stylesheet' type='text/css'>
+
+	<script src="_/js/modernizr-2.6.2.dev.js"></script>
+</head>
+
+<body>
+	<div id="ajax-window"></div>
+	<div id="boxed">    
+		<!-- HEADER -->
+		<header class="section group">
+			<!-- Fixed Header -->   
+			<div class="section group" id="fixed-header">	
+    			<!-- Contact and Share toggle sections -->			
+                <div class="section group">	
+    				<!-- Contact toggle section -->
+					<div id="contact_toggle" class="group">
+	    				<!-- Contact main info -->
+                        <div class="col span_4_of_8">
+							<h1>Let's get in touch</h1>
+							<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec mi in libero molestie posuere. Donec vel nisi eu augue consequat interdum. </h2>
+							<ul>
+								<li>Phone: 0749 372 941</li>
+								<li>Email: <a href="#">hello@renascenthemes.com</a></li>
+								<li>Booking: <a href="#">support@renascenthemes.com</a></li>
+							</ul>
+						</div>
+	    				<!-- Contact form -->
+						<div class="col span_4_of_8 group" id="contactFormContainer">
+							<form action="mail.php" method="post" id="contactForm">
+								<input type="text" placeholder="Full Name" name="name" id="contactName" required/>
+								<input type="email" placeholder="Email Address" name="email" id="contactEmail" required/>
+								<input type="tel" placeholder="Phone Number" id="contactPhone" name="tel"/>
+								<textarea placeholder="Message" name="message" id="contactMessage" required></textarea>
+								<input type="submit" id="submit" name="submit"/>
+							</form>
+						</div>
+					</div>
+                    
+					<!-- Share toggle section -->
+					<div id="share_toggle" class="group">
+						<ul>
+							<li><h4>Share</h4></li>
+						</ul>
+					</div>                    
+				</div>
+                       
+    			<!-- Music player and Navigation sections -->			
+				<div class="section group">                
+					<!-- jplayer -->
+					<div class="col span_3_of_8" id="player">
+                        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                        <div id="jp_container_1" class="jp-audio">
+                            <div class="jp-type-playlist">
+                                <div class="jp-gui jp-interface">
+                                    <ul class="jp-controls">
+                                        <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+                                        <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                        <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                        <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+                                    </ul>
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-time-holder">
+                                        <div class="jp-duration"></div>
+                                    </div>
+                                    
+                                    <div class="jp-playlist">
+                                        <ul>
+                                            <li></li>
+                                        </ul>
+                                	</div>
+                            	</div>            
+                                <div class="jp-no-solution">
+                                    To play the media you need to update your browser to a recent version.
+                                </div>
+                            </div>
+                        </div>
+					</div>
+                    
+					<!-- Navigation -->
+					<nav class="col span_5_of_8">
+						<ul>
+							<li><a href="#">Music</a></li>
+							<li><a href="#">Live</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Bio</a></li>
+							<li><a href="#">News</a></li>
+							<li class="nav-tab"><a id="contact-tab" href="#">Contact</a></li>
+							<li class="nav-tab"><a id="share-tab" href="#">Share</a></li>
+						</ul>
+					</nav>
+				</div>                
+			</div>
+                    
+			<!-- Logo and tagline -->   
+			<div id="logo" class="section group wrapper">            
+				<h1>bandit</h1>
+				<h4>modern responsive template for bands and musicians</h4>			
+            </div>            
+		</header>
+
+		<!-- CONTENT -->
+		<div class="section group wrapper">        
+			<!-- SLIDER -->
+			<div id="slider">            
+				<ul>
+                    <li>
+                    	<img alt=" " src="_/img/slide1.jpg" />
+						<div class="slider-caption">
+							<h2>Preview Bandit new single "Sweet life"</h2>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+						</div>
+					</li>
+                    <li>
+						<img alt=" " src="_/img/slide2.jpg" />
+						<div class="slider-caption">
+							<h2>The highly anticipated new album from Bandit to be released May 21</h2>
+						</div>
+					</li>
+                    <li>
+						<img alt=" " src="_/img/slide3.jpg" />
+						<div class="slider-caption">
+							<h2>Make an appearance in the "One Love" music video</h2>
+							<h4>Donec sagittis arcu eget orci facilisis tincidunt</h4>
+						</div>
+					</li>
+				</ul>            
+				<div id="slider-arrows">
+					<span><a id="prev-slide" href="#">prev</a></span>
+					<span><a id="next-slide" href="#">next</a></span>
+				</div>                
+			</div>
+    
+			<!-- MUSIC -->
+			<div class="section group container" id="music">				
+                <div class="col span_1_of_8 section-title">
+					<h1>music</h1>
+				</div>                
+				<div class="col span_6_of_8">
+					<div id="covers_container">
+	                    <ul id="covers" class="group">
+	                        <li>
+								<a href="music-open.html">
+									<img alt=" " src="_/img/discography/1.jpg" />
+									<div>
+	                                    <h3>World Destruction</h3>
+	                                    <span>Release date: March 28, 1992</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+									</div>
+	                            </a>
+	                        </li>
+	                        <li>
+								<a href="music-open.html">
+									<img alt=" " src="_/img/discography/2.jpg" />
+	                                <div>
+	                                    <h3>Only if you run</h3>
+	                                    <span>Release date: March 28, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="music-open.html">
+	                                <img alt=" " src="_/img/discography/3.jpg" />
+	                                <div>
+	                                    <h3>The Distance</h3>
+	                                    <span>Release date: March 28, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+								<a href="music-open.html">
+									<img alt=" " src="_/img/discography/4.jpg" />
+									<div>
+	                                    <h3>Space (I Belive in)</h3>
+	                                    <span>Release date: March 29, 1992</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+									</div>
+	                            </a>
+	                        </li>
+	                        <li>
+								<a href="music-open.html">
+									<img alt=" " src="_/img/discography/5.jpg" />
+	                                <div>
+	                                    <h3>All Around the World</h3>
+	                                    <span>Release date: March 30, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="music-open.html">
+	                                <img alt=" " src="_/img/discography/6.jpg" />
+	                                <div>
+	                                    <h3>Killing</h3>
+	                                    <span>Release date: March 1, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li> 
+							<li>
+								<a href="music-open.html">
+									<img alt=" " src="_/img/discography/7.jpg" />
+									<div>
+	                                    <h3>Last Stop: This Town</h3>
+	                                    <span>Release date: March 2, 1992</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+									</div>
+	                            </a>
+	                        </li>
+	                        <li>
+								<a href="music-open.html">
+									<img alt=" " src="_/img/discography/8.jpg" />
+	                                <div>
+	                                    <h3>A small Victory</h3>
+	                                    <span>Release date: March 3, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="music-open.html">
+	                                <img alt=" " src="_/img/discography/9.jpg" />
+	                                <div>
+	                                    <h3>Against the Ninja</h3>
+	                                    <span>Release date: March 4, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li> 
+							<li>
+								<a href="music-open.html">
+									<img alt=" " src="_/img/discography/10.jpg" />
+									<div>
+	                                    <h3>Come with me now</h3>
+	                                    <span>Release date: March 5, 1992</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+									</div>
+	                            </a>
+	                        </li>
+	                        <li>
+								<a href="music-open.html">
+									<img alt=" " src="_/img/discography/11.jpg" />
+	                                <div>
+	                                    <h3>Basketball</h3>
+	                                    <span>Release date: March 5, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="music-open.html">
+	                                <img alt=" " src="_/img/discography/12.jpg" />
+	                                <div>
+	                                    <h3>Mother Mother</h3>
+	                                    <span>Release date: March 6, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li> 
+							<li>
+								<a href="music-open.html">
+									<img alt=" " src="_/img/discography/13.jpg" />
+	                                <div>
+	                                    <h3>Red Right Hand</h3>
+	                                    <span>Release date: March 7, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="music-open.html">
+	                                <img alt=" " src="_/img/discography/14.jpg" />
+	                                <div>
+	                                    <h3>Goin' out west</h3>
+	                                    <span>Release date: March 8, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li>
+                            <li>
+	                            <a href="music-open.html">
+	                                <img alt=" " src="_/img/discography/15.jpg" />
+	                                <div>
+	                                    <h3>We have a tehnical</h3>
+	                                    <span>Release date: March 9, 2013</span>
+	                                    <hr>
+	                                    <h4>Click for details</h4>
+	                                </div>
+	                            </a>
+	                        </li>  
+	                    </ul>
+                    </div>
+				</div>				
+                <div class="col span_1_of_8 section-nav">
+					<ul>
+					</ul>
+				</div>
+                <div id="gallery-nav-mobile">
+	                <ul class="gallery-nav">
+	                	<li><a class="prev-gallery" href="#">Prev</a></li>
+	                	<li class="gallery-no">4/11</li>
+	                	<li><a class="next-gallery" href="#">Next</a></li>
+	               	</ul>
+               	</div>
+			</div>
+                
+			<!-- LIVE -->
+			<div class="section group container" id="live">				
+                <div class="col span_1_of_8 section-title">
+					<h1>live</h1>
+				</div>
+				<div class="col span_6_of_8 live">
+					<div>
+						<ul id="events">
+							<li>
+								<div class="event_box">
+									<h2>Le Pavillon Champs-Elysées</h2>
+									<small>Paris</small>
+	                            </div>
+	                            <h3>May 23 &mdash; 10:00 PM</h3>
+	                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a arcu dolor, vel egestas dui. Integer eu magna dui, et laoreet dui. Donec non odio eros. </p>
+	                            <span><a href="#">Buy Tickets</a></span>
+							</li>
+							<li>
+								<div class="event_box">
+	                            	<h2>Sala Apolo</h2>
+	                            	<small>Barcelona</small>
+	                            </div>
+	                            <h3>June 05 &mdash; 11:30 PM</h3>
+	                            <p>Duis a arcu dolor, vel egestas dui. Integer eu magna dui, et laoreet dui.</p>
+	                            <span><a href="#">Buy Tickets</a></span>
+							</li>
+							<li>
+								<div class="event_box">
+									<h2>Le Pavillon Champs-Elysées</h2>
+									<small>Paris</small>
+	                            </div>
+	                            <h3>May 23 &mdash; 10:00 PM</h3>
+	                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a arcu dolor, vel egestas dui. Integer eu magna dui, et laoreet dui. Donec non odio eros. </p>
+	                            <span><a href="#">Buy Tickets</a></span>
+							</li>
+							<li>
+								<div class="event_box">
+	                            	<h2>Sala Apolo</h2>
+	                            	<small>Barcelona</small>
+	                            </div>
+	                            <h3>June 05 &mdash; 11:30 PM</h3>
+	                            <p>Duis a arcu dolor, vel egestas dui. Integer eu magna dui, et laoreet dui.</p>
+	                            <span><a href="#">Buy Tickets</a></span>
+							</li>
+							<li>
+								<div class="event_box">
+									<h2>Le Pavillon Champs-Elysées</h2>
+									<small>Paris</small>
+	                            </div>
+	                            <h3>May 23 &mdash; 10:00 PM</h3>
+	                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a arcu dolor, vel egestas dui. Integer eu magna dui, et laoreet dui. Donec non odio eros. </p>
+	                            <span><a href="#">Buy Tickets</a></span>
+							</li>
+							<li>
+								<div class="event_box">
+	                            	<h2>Sala Apolo</h2>
+	                            	<small>Barcelona</small>
+	                            </div>
+	                            <h3>June 05 &mdash; 11:30 PM</h3>
+	                            <p>Duis a arcu dolor, vel egestas dui. Integer eu magna dui, et laoreet dui.</p>
+	                            <span><a href="#">Buy Tickets</a></span>
+							</li>
+						</ul>
+					</div>
+				</div>                
+				<div class="col span_1_of_8 section-nav">
+					<ul>
+					</ul>
+				</div>                
+			</div>
+                
+			<!-- GALLERY -->
+			<div class="section group container" id="gallery">				
+                <div class="col span_1_of_8 section-title">
+					<h1>gallery</h1>
+				</div>                    
+				<div class="col span_6_of_8 gallery">                
+					<div id="gallery-switch">
+						<ul class="group">
+                        	<li><a href="#" class="active_gallery_navigation">Photos</a></li>
+                            <li><a href="#">Videos</a></li>
+						</ul>
+					</div>                        
+					<div class="section group photos active_gallery_section" id="photos">
+                        <ul>
+                            <li class="group">
+                                <img alt=" " src="_/img/gallery1.jpg" />
+                                <h2 class="caption">&mdash; Photography by Johan Boutin</h2>
+                            </li>
+                            <li class="group">
+                                <img alt=" " src="_/img/gallery2.jpg" />
+                                <h2 class="caption">&mdash; Photography by Johan Boutin</h2>
+                            </li>
+                            <li class="group">
+                                <img alt=" " src="_/img/gallery3.jpg" />
+                                <h2 class="caption">&mdash; Photography by Johan Boutin</h2>
+                            </li>
+                            <li class="group">
+                                <img alt=" " src="_/img/gallery4.jpg" />
+                                <h2 class="caption">&mdash; Photography by Johan Boutin</h2>
+                            </li>
+                            <li class="group">
+                                <img alt=" " src="_/img/gallery5.jpg" />
+                                <h2 class="caption">&mdash; Photography by Johan Boutin</h2>
+                            </li>
+                            <li class="group">
+                                <img alt=" " src="_/img/gallery6.jpg" />
+                                <h2 class="caption">&mdash; Photography by Johan Boutin</h2>
+                            </li>
+                        </ul>
+                        <ul class="gallery-nav">
+                        	<li><a class="prev-gallery" href="#">Prev</a></li>
+                        	<li class="gallery-no">4/11</li>
+                        	<li><a class="next-gallery" href="#">Next</a></li>
+                       	</ul>
+					</div>                    
+                    <div class="section" id="videos">
+                        <ul>
+                        	<li class="group">
+<iframe src="//player.vimeo.com/video/19651796" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<h2 class="caption">&mdash; Local Natives | Who Knows Who Cares | A Take Away Show</h2>
+							</li>
+							<li class="group">
+<iframe src="//player.vimeo.com/video/63161577" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<h2 class="caption">&mdash; EFTERKLANG - The Ghost - Official Video</h2>
+							</li>
+                        </ul>
+                        <ul class="gallery-nav">
+                        	<li><a class="prev-gallery" href="#">Prev</a></li>
+                        	<li class="gallery-no">4/11</li>
+                        	<li><a class="next-gallery" href="#">Next</a></li>
+                       	</ul>
+                    </div>
+				</div>                
+			</div>
+                
+			<!-- BIOGRAPHY -->
+			<div class="section group container" id="bio">
+				<div class="col span_1_of_8 section-title">
+					<h1>biography</h1>
+				</div>    
+				<div class="col span_6_of_8 bio-columns">
+					<h2>Bandit are part of the vanguard of "new country" artists who helped redefine the genre.</h2>
+					<hr>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod pharetra enim at ornare. Sed vitae neque velit. Vivamus sed magna orci, euismod bibendum orci. Etiam pellentesque, diam in condimentum tristique, ante hendrerit at diam. Vestibulum id felis turpis risus in ipsum ullamcorper tincidunt id eu risus. Sed eget vulputate mauris. Ut non tellus ac dui fermentum diam in condimentum tristique suscipit eget eu erat.</p><h3>Sed bibendum egestas accumsan</h3><img alt=" " src="_/img/bio-pic.jpg"/><p>Curabitur fermentum ullamcorper quam, ut rhoncus sapien ultrices non. Proin accumsan commodo turpis, vitae convallis ipsum varius sed. Vivamus pretium, urna quis porta gravida, turpis risus elementum leo, ut sollicitudin felis metus non elit. Duis turpis risus sit amet eros lacus, molestie aliquet odio. In congue ultricies sem, fermentum fringilla velit sodales condimentum. </p><p>Sed ac iaculis metus. Sed bibendum egestas accumsan. Sed eget justo turpis risus mauris. In eu massa nec leo pharetra aliquam et ac magna. Nulla vehicula, lectus non tempus mattis, lacus erat sagittis tellus, auctor facilisis tellus dolor sit amet quam. Etiam pellentesque, diam in condimentum tristique, ante lectus fringilla metus, et cursus velit nisl ut quam.</p>
+				</div>    
+			</div>
+                
+			<!-- NEWS -->
+			<div class="section group container" id="news">				
+                <div class="col span_1_of_8 section-title">
+					<h1>news</h1>
+				</div>                    
+				<div class="col span_2_of_8">
+					<h3>April 24, 2013</h3>
+					<img alt=" " src="_/img/news-thumbnail1.jpg" />
+					<h2><a href="news-open.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h2>
+                    <p>Phasellus posuere diam sed leo laoreet et adipiscing ligula placerat. Pellentesque ullamcorper sem arcu commodo tempor pellentesque.</p>
+                    <h4><a href="news-open.html">read more</a></h4>
+				</div>                    
+				<div class="col span_2_of_8">
+					<h3>April 24, 2013</h3>
+					<img alt=" " src="_/img/news-thumbnail2.jpg" />
+					<h2><a href="news-open.html">Nullam semper luctus lorem, dignissim accumsan neque pharetra</a></h2>
+                    <p>Integer gravida ipsum et ligula adipiscing tristique. Nullam aliquet, metus ac elementum varius, tortor justo rhoncus nisi, metus. </p>
+                    <h4><a href="news-open.html">read more</a></h4>
+				</div>                    
+				<div class="col span_2_of_8">
+					<h3>More Headlines</h3>
+					<ul>
+                        <li><a href="news-open.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
+                        <li><a href="news-open.html">Nullam ut nibh ante, non porta magna</a></li>
+                        <li><a href="news-open.html">Commodo in risus convallis venenatis</a></li>
+                        <li><a href="news-open.html">Nunc id nulla non enim accumsan rutrum ac vel nulla</a></li>
+                        <li><a href="news-open.html">Fusce facilisis vehicula magna, dui ullamcorper </a></li>
+					</ul>
+				</div>                
+			</div>    
+            
+			<!-- TWITTER -->
+			<div class="section group" id="twitter"></div>            
+            
+			<!-- UPDATES/CONNECT Stripe -->
+			<div class="section group" id="bottom-stripe">				
+                <!-- Newsletter -->
+				<div class="col span_4_of_8" id="newsletter">
+					<h1>get updates</h1>
+					<h2>Sign up for our mailing list to get the latest news, tour dates and more!</h2>
+					<form method="get" action="#" id="#">
+						<input type="email" placeholder="me@email.com" value="" class="" name="" required>
+						<input type="submit" id="newsletterSubmit" class="newsletter-submit" value="Subscribe" name="">
+					</form>
+				</div>                    
+				<!-- Social Media Buttons -->
+				<div class="col span_4_of_8" id="social">
+					<h1>Connect</h1>
+					<h2>Lorem ipsum dolor amet, consectetur</h2>
+					<ul class="clearfix">
+						<li class="facebook"><a href="#">Facebook</a></li>
+						<li class="twitter-social"><a href="#">Twitter</a></li>  
+						<li class="google-plus"><a href="#">Google+</a></li>
+						<li class="youtube"><a href="#">Youtube</a></li> 
+						<li class="instagram"><a href="#">Instagram</a></li>  
+						<li class="soundcloud"><a href="#">Soundcloud</a></li> 
+						<li class="lastfm"><a href="#">Last.fm</a></li>
+						<li class="myspace"><a href="#">Myspace</a></li> 
+                        <!-- Hidden icons 
+						<li class="vimeo"><a href="#">Vimeo</a></li>
+						<li class="pinterest"><a href="#">Pinterest</a></li>
+						<li class="rss"><a href="#">RSS</a></li>
+						<li class="flickr"><a href="#">Flickr</a></li> 
+						<li class="tumblr"><a href="#">Tumblr</a></li>
+                        -->
+					</ul>
+				</div>                
+			</div>
+            
+			<!-- FOOTER -->
+			<footer class="section">            
+				<p>&copy;2013 <a href="http://www.renascenthemes.com" target="_blank">Renascenthemes</a>, All Rights Reserved &mdash; <a href="mailto:hello@renascenthemes.com">Contact Us</a></p>
+			</footer>		
+        </div><!-- End Wrapper -->        
+	</div><!-- End Boxed -->
+    
+	<script src="_/js/jquery-1.9.1.min.js"></script>    
+    <script src="_/js/easing.js"></script>
+    <script src="_/js/jquery.jplayer.min.js"></script>
+    <script src="_/js/jplayer.playlist.min.js"></script>
+    <script src="_/js/playlist.js"></script>
+    <script src="_/js/jquery.hoverdir.js"></script>
+    <script src="_/js/jquery.columnizer.js"></script>
+    <script src="_/js/twitterFetcher_v10_min.js"></script>
+    <script src="_/js/functions.js"></script>
+
+    
+    <!-- Google Analytics -->
+    <script>    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();    
+    </script>    
+</body>
+</html>

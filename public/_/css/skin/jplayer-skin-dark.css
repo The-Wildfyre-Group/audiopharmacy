@@ -1,0 +1,55 @@
+a.jp-play,
+a.jp-pause {
+	border:2px solid #000;
+}
+a.jp-play {
+	background: url("player-skin-dark.png") -18px 3px no-repeat;
+}
+a.jp-play:hover {
+	background: url("player-skin-dark.png") 2px 3px no-repeat;
+	border-color:#b9b9b9;
+}
+a.jp-pause {
+	background: url("player-skin-dark.png") 2px -18px no-repeat;
+}
+a.jp-pause:hover {
+	background: url("player-skin-dark.png") -18px -18px no-repeat;
+	border-color:#b9b9b9;
+}
+a.jp-previous, a.jp-next {
+	border:2px solid #000;
+}
+a.jp-previous {
+	background: url("player-skin-dark.png") -3px -62px no-repeat;
+}
+a.jp-previous:hover {
+	background: url("player-skin-dark.png") -23px -62px no-repeat;
+	border-color:#b9b9b9;
+}
+a.jp-next {
+	background: url("player-skin-dark.png") -22px -42px no-repeat;
+}
+a.jp-next:hover {
+	background: url("player-skin-dark.png") -2px -42px no-repeat;
+	border-color:#b9b9b9;
+}
+div.jp-progress {
+	background-color: #222222;
+}
+
+div.jp-seek-bar {
+	background: url("player-skin-dark.png") 0 -80px repeat-x;
+
+}
+div.jp-play-bar {
+	background: url("player-skin-dark.png") 0 -90px repeat-x ;
+}
+div.jp-audio div.jp-type-playlist div.jp-time-holder {
+	color:#666666;
+}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+	color:#000;
+}
+.jp-no-solution {
+	color:#6f6f6f;
+}

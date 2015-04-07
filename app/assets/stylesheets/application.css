@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+.the_band h2 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.the_band img {
+  height: 150px;
+  width: 140px;
+  border-radius: 50%;
+}

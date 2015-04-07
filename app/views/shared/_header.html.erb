@@ -1,0 +1,100 @@
+<header class="section group">
+			<!-- Fixed Header -->   
+			<div class="section group" id="fixed-header">	
+    			<!-- Contact and Share toggle sections -->			
+                <div class="section group">	
+    				<!-- Contact toggle section -->
+					<div id="contact_toggle" class="group">
+	    				<!-- Contact main info -->
+                        <div class="col span_4_of_8">
+							<h1>Let's get in touch</h1>
+							<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec mi in libero molestie posuere. Donec vel nisi eu augue consequat interdum. </h2>
+							<ul>
+								<li>Phone: 0749 372 941</li>
+								<li>Email: <a href="#">hello@audiopharmacy.com</a></li>
+								<li>Booking: <a href="#">bookings@audiopharmacy.com</a></li>
+							</ul>
+						</div>
+	    				<!-- Contact form -->
+						<div class="col span_4_of_8 group" id="contactFormContainer">
+							<form action="mail.php" method="post" id="contactForm">
+								<input type="text" placeholder="Full Name" name="name" id="contactName" required/>
+								<input type="email" placeholder="Email Address" name="email" id="contactEmail" required/>
+								<input type="tel" placeholder="Phone Number" id="contactPhone" name="tel"/>
+								<textarea placeholder="Message" name="message" id="contactMessage" required></textarea>
+								<input type="submit" id="submit" name="submit"/>
+							</form>
+						</div>
+					</div>
+                    
+					<!-- Share toggle section -->
+					<div id="share_toggle" class="group">
+						<ul>
+							<li><h4>Share</h4></li>
+						</ul>
+					</div>                    
+				</div>
+                       
+    			<!-- Music player and Navigation sections -->			
+				<div class="section group">                
+					<!-- jplayer -->
+					<div class="col span_3_of_8" id="player">
+                        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                        <div id="jp_container_1" class="jp-audio">
+                            <div class="jp-type-playlist">
+                                <div class="jp-gui jp-interface">
+                                    <ul class="jp-controls">
+                                        <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+                                        <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                        <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                        <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+                                    </ul>
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-time-holder">
+                                        <div class="jp-duration"></div>
+                                    </div>
+                                    
+                                    <div class="jp-playlist">
+                                        <ul>
+                                            <li></li>
+                                        </ul>
+                                	</div>
+                            	</div>            
+                                <div class="jp-no-solution">
+                                    To play the media you need to update your browser to a recent version.
+                                </div>
+                            </div>
+                        </div>
+					</div>
+                    
+					<!-- Navigation -->
+					<nav class="col span_5_of_8">
+						<ul>
+							<li><a href="#" data-section="music">Music</a></li>
+							<li><a href="#" data-section="live">band</a></li>
+							<li><a href="#" data-section="gallery">videos</a></li>
+							<li><a href="#" data-section="bio">about</a></li>
+							<li><a href="#" data-section="news">poems</a></li>
+							<li><a href="#" data-section="news">art</a></li>
+							<li class="nav-tab"><a id="contact-tab" href="#">Contact</a></li>
+							<li class="nav-tab"><a id="share-tab" href="#">Share</a></li>
+						</ul>
+					</nav>
+				</div>                
+			</div>
+                    
+			<!-- Logo and tagline -->   
+			<div id="logo" class="section group wrapper">            
+				<h1>
+					<%= image_tag("ap_logo.jpg", style: "height: 25px;") %> 
+					<a href="/" style="margin-top: -5px;">
+						audiopharmacy
+					</a>
+				</h1>
+				<h4>Making music that moves the soul and stirs insight, world hip-hop band</h4>			
+            </div>            
+		</header>

@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'pages/band'
+
+  get 'pages/music'
+
+  get 'pages/events'
+
+  get 'pages/gallery'
+
+  get 'pages/news'
+
+  get 'pages/poetry'
+
+  get 'pages/contact'
+
   root 'main#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
